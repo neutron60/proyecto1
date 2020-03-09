@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Middleware\EsAdmin;
+
 
 
 
 use Illuminate\Http\Request;
+
 
 class AdministradorController extends Controller
 {

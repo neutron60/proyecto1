@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-namespace Illuminate\Auth\Middleware;
+
+
 
 use Illuminate\Http\Request;
 use App\Articulo;        // se debe colocar el nombre del modelo

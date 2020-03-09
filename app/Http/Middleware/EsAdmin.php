@@ -6,6 +6,7 @@ use Closure;
 use Illuminate\Support\Facades\Auth;
 
 
+
 class EsAdmin
 {
     /**
@@ -21,12 +22,17 @@ class EsAdmin
         if(Auth::check()){
 
             $user=Auth::user();
-            if(!$user->esAdmin()){
+            if($user->esAdmin()){
 
-                return redirect("/");
+                return redirect("/layouts");
 
             }
+            else{ return redirect("/");}
 
+        }
+
+        if(!Auth::check()){
+           return redirect("/");
         }
 
         return $next($request);

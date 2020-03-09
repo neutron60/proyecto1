@@ -1,7 +1,10 @@
 <?php
+
+
 use App\Articulo;
 use App\User;
 use App\Role;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -88,3 +91,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'AdministradorController@index');
+
